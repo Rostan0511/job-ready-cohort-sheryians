@@ -1,3 +1,16 @@
 h1{
     color: red;
 }
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.chacha{
+    color: green;
+}
+
+#meme{
+    color: yellow;
+}   

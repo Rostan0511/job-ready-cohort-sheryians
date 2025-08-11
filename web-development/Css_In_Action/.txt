@@ -1,6 +1,0 @@
-css hai aisa code jisse hamari website rang birangi dikhne lagegi, to add colors and any kind of visual modification we use css
-
-syntax
-selector {
-    property : value
-}

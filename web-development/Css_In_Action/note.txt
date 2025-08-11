@@ -1,0 +1,21 @@
+CSS Basics
+CSS (Cascading Style Sheets) is used to add colors, styles, and visual modifications to a website.
+
+Syntax:
+
+selector {
+    property: value;
+}
+Example:
+h1 {
+    color: red;
+}
+
+External CSS
+Widely used in the industry for maintainability and reusability.
+
+CSS Precedence (Specificity):
+#id     → highest priority  
+.class  → second highest  
+tag     → lower priority  
+*       → universal selector (lowest)
