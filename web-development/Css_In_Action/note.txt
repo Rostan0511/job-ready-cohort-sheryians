@@ -19,3 +19,22 @@ CSS Precedence (Specificity):
 .class  → second highest  
 tag     → lower priority  
 *       → universal selector (lowest)
+
+Content-box → Width/height apply only to content; padding and border increase total size.
+Border-box → Width/height include content, padding, and border; total size stays fixed.
+
+Property: background-size
+Value(s): cover | contain | auto | specific width & height
+Description: Controls how a background image is scaled to fit its container.
+    - cover: The image will scale to completely cover the container. It may crop parts of the image to maintain aspect ratio.
+    - contain: The image will scale to fit inside the container without cropping, but may leave empty space.
+    - auto: The image displays at its original size.
+    - width height: You can set specific sizes (e.g., 100px 50px).
+
+Example:
+    body {
+        background-image: url("image.jpg");
+        background-size: cover;      /* Covers the entire area */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat;/* Prevents tiling */
+    }
