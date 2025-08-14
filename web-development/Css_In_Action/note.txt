@@ -38,3 +38,11 @@ Example:
         background-position: center; /* Centers the image */
         background-repeat: no-repeat;/* Prevents tiling */
     }
+
+
+    responsiveness
+    %
+    rem
+    em
+    vh
+    vw
