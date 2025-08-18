@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Image Optimization Lab</title>
+  <link rel="stylesheet" href="scss/main.css">
+  <style>body{font-family:system-ui;margin:0;padding:24px}</style>
+</head>
+<body>
+  <h1>After Optimization</h1>
+<picture>
+  <source srcset="images/hero-large.webp" type="image/webp">
+  <source srcset="images/hero-large.jpg" type="image/jpeg">
+  <img src="images/hero-large.jpg" alt="Optimized Lion" loading="lazy" width="1200" height="800">
+</picture>
+
+</body>
+</html>

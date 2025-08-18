@@ -1,0 +1,14 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin buttonStyle($bg, $textColor, $padding: 1rem) {
+  background: $bg;
+  color: $textColor;
+  padding: $padding;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

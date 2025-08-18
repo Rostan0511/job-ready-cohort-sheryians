@@ -1,0 +1,22 @@
+header {
+  background: $primary-color;
+  padding: $spacing;
+
+  h1 {
+    color: white;
+  }
+
+  nav {
+    margin-top: $spacing;
+
+    a {
+      color: yellow;
+      text-decoration: none;
+      margin-right: $spacing;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
