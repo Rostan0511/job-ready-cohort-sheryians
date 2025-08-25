@@ -7,7 +7,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  color: wheat;
+  color: #d3bfa3;
   background-color: #0e0e0e;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -116,5 +116,75 @@ main {
   }
   .view-2 .marquee .images img {
     width: 200px;
+  }
+}
+.view-3 {
+  background-color: #0e0e0e;
+  padding: 2rem 4rem;
+}
+.view-3 .cards {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+  width: 100%;
+}
+.view-3 .cards .card {
+  flex: 1;
+  min-width: 250px;
+  background-color: #181716;
+  padding: 2rem 3rem;
+  border: 1px solid rgba(133, 121, 103, 0.3);
+}
+.view-3 .cards .card .number {
+  font-size: 0.9rem;
+  font-weight: 100;
+  margin-bottom: 0.5rem;
+}
+.view-3 .cards .card h1 {
+  margin-bottom: 16px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+.view-3 .cards .card p {
+  font-weight: 100;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  opacity: 0.6;
+}
+.view-3 .cards .card .visit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.view-3 .cards .card .visit span {
+  border-radius: #0e0e0e;
+  padding: 0.3rem 0.3rem;
+  border: 1px solid rgba(133, 121, 103, 0.3);
+  border-radius: 50%;
+}
+.view-3 .cards .card .visit img {
+  width: 20px;
+  height: 20px;
+}
+.view-3 .cards .card .visit h4 {
+  margin: 0;
+  font-weight: 400;
+  opacity: 0.9;
+}
+.view-3 .cards .card-2 {
+  transform: scale(1.05);
+  z-index: 1;
+}
+@media (max-width: 1024px) {
+  .view-3 .cards {
+    flex-direction: column;
+  }
+  .view-3 .cards .card {
+    width: 100%;
+    transform: scale(1);
+  }
+  .view-3 .cards .card-2 {
+    transform: scale(1);
   }
 }/*# sourceMappingURL=style.css.map */

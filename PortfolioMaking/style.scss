@@ -7,7 +7,7 @@
 html, body{
     height: 100%;
     width: 100%;
-    color: wheat;
+    color: #d3bfa3;
     background-color: #0e0e0e;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -15,6 +15,8 @@ html, body{
 main{
     width: 100%;
 }
+
+
 
 .view-1{
     width: 100%;
@@ -159,5 +161,97 @@ main{
         }
     }
     
+}
+
+.view-3 {
+  background-color: #0e0e0e;
+  padding: 2rem 4rem;
+
+  .cards {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    width: 100%;
+
+    .card {
+      flex: 1;
+      min-width: 250px;
+      background-color: #181716;
+      padding: 2rem 3rem;
+      border: 1px solid rgba(133, 121, 103, 0.3); // semi-transparent border
+
+      .number {
+        font-size: 0.9rem;
+        font-weight: 100;
+        margin-bottom: 0.5rem;
+      }
+
+      h1 {
+        margin-bottom: 16px;
+        font-weight: 400;
+        opacity: 0.9;
+      }
+
+      p {
+        font-weight: 100;
+        line-height: 1.6;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        opacity: 0.6;
+      }
+
+      .visit {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
+        
+        span{
+            border-radius: #0e0e0e;
+            padding: 0.3rem 0.3rem;
+            border: 1px solid rgba(133, 121, 103, 0.3);
+            border-radius: 50%;
+        }
+
+        img {
+          width: 20px;
+          height: 20px;
+
+
+
+        }
+
+        h4 {
+          margin: 0;
+          font-weight: 400;
+          opacity: 0.9;
+        }
+
+        
+      }
+    }
+
+    // Center card zoom on desktop
+    .card-2 {
+      transform: scale(1.05);
+      z-index: 1;
+    }
+  }
+
+  // Responsive stacking below 1024px
+  @media (max-width: 1024px) {
+    .cards {
+      flex-direction: column;
+
+      .card {
+        width: 100%;
+        transform: scale(1); // reset zoom for all cards
+      }
+
+      .card-2 {
+        transform: scale(1); // specifically reset center card
+      }
+    }
+  }
 }
 
