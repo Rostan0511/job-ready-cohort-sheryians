@@ -243,9 +243,9 @@ header .hamburger {
 }
 .view-3 .cards .card .visit h4 {
   margin: 0;
-  font-weight: 400;
+  font-weight: 300;
   opacity: 0.9;
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(1rem, 1vw, 2rem);
 }
 .view-3 .cards .card-2 {
   transform: scale(1.05);
