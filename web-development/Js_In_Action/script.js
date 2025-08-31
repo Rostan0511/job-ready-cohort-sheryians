@@ -168,3 +168,20 @@
 // hofs
 
 // arrays in js are non-homogenous
+
+
+// let arr = [1,2,3,4,5];
+// arr.pop();
+// arr.push(6);
+// arr.unshift(9);
+// arr.shift();
+// arr.splice(1,2);
+// console.log(arr);
+
+// ek se zayda bande ki baat ki toh Array, ek bande ke baare mein saari baat ki toh object
+
+var a = {
+    username : 'rostan', //username is property
+    age : 29,
+    city: function(){} //this is a method
+};
