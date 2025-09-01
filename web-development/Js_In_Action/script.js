@@ -180,8 +180,18 @@
 
 // ek se zayda bande ki baat ki toh Array, ek bande ke baare mein saari baat ki toh object
 
-var a = {
-    username : 'rostan', //username is property
-    age : 29,
-    city: function(){} //this is a method
-};
+// var a = {
+//     username : 'rostan', //username is property
+//     age : 29,
+//     city: function(){} //this is a method
+// };
+
+
+//higher order function
+// function abcd(val){
+//     val();
+// }
+// abcd(function sum(){
+//     var sum = 3;
+//     console.log(sum);
+// })
