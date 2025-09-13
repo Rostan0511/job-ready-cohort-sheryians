@@ -395,11 +395,16 @@ main {
 @media (min-width: 1020px) {
   .view-5 {
     padding: 4rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    aspect-ratio: initial;
   }
   .view-5 .azure {
     display: grid;
+    padding-bottom: 0;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "a b c";
+    grid-auto-rows: auto;
   }
   .view-5 .azure .v-a {
     grid-area: a;
@@ -422,6 +427,7 @@ main {
   }
   .view-5 .sage {
     display: grid;
+    grid-auto-rows: auto;
     grid-template-areas: "c b a";
   }
   .view-5 .sage .v-a {
@@ -497,4 +503,50 @@ main {
   font-size: 0.8em;
   font-weight: 300;
   letter-spacing: 0.1em;
+}
+
+@media (min-width: 1020px) {
+  .view-6 {
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "a b";
+  }
+  .view-6 .top {
+    grid-area: a;
+  }
+  .view-6 .bottom {
+    grid-area: b;
+  }
+  .view-6 .bottom .clientheading {
+    padding-left: 20em;
+  }
+  .view-6 .bottom .client .clientcard {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .view-6 .bottom .client .clientcard .clientinfo {
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+  }
+  .view-6 .bottom .client .clientcard .clientinfo h3 {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 200;
+  }
+  .view-6 .bottom .client .clientcard .clientinfo p {
+    font-style: monospace;
+    font-size: 0.9em;
+    font-weight: 500;
+    opacity: 0.6;
+  }
+  .view-6 .bottom .client .clientcard p {
+    text-transform: uppercase;
+    font-style: monospace;
+    font-size: 0.8em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+  }
 }/*# sourceMappingURL=style.css.map */
