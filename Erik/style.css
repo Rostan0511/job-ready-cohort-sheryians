@@ -488,24 +488,28 @@ main {
 }
 .view-6 .bottom .client .clientcard .clientinfo h3 {
   text-transform: uppercase;
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: 200;
 }
-.view-6 .bottom .client .clientcard .clientinfo p {
-  font-style: monospace;
+.view-6 .bottom .client .clientcard .clientinfo .year {
+  font-style: Roboto Mono, monospace;
   font-size: 0.9em;
   font-weight: 500;
-  opacity: 0.6;
+  opacity: 0.8;
+  text-transform: uppercase;
 }
 .view-6 .bottom .client .clientcard p {
   text-transform: uppercase;
-  font-style: monospace;
+  font-style: Roboto Mono;
   font-size: 0.8em;
-  font-weight: 300;
-  letter-spacing: 0.1em;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
 @media (min-width: 1020px) {
+  .mainline {
+    gap: 1em;
+  }
   .view-6 {
     padding: 4rem;
     display: grid;
@@ -533,7 +537,7 @@ main {
   }
   .view-6 .bottom .client .clientcard .clientinfo h3 {
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 200;
   }
   .view-6 .bottom .client .clientcard .clientinfo p {
@@ -549,4 +553,72 @@ main {
     font-weight: 300;
     letter-spacing: 0.1em;
   }
+}
+.view-7 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 1.5rem;
+}
+.view-7 .top {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.view-7 .top h2 {
+  font-weight: 200;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+.view-7 .top p {
+  font-style: monospace;
+  font-size: 1.5em;
+  font-weight: 300;
+  word-spacing: 0.1em;
+  line-height: 1.5em;
+}
+.view-7 .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.view-7 .bottom .infocard {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.view-7 .bottom .infocard h3 {
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: 200;
+}
+.view-7 .bottom .infocard img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.view-7 .bottom .infocard .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.view-7 .bottom .infocard .info p {
+  text-transform: uppercase;
+  font-size: Roboto-mono, monospace;
+  font-weight: 400;
+  font-size: 1em;
+}
+.view-7 .bottom .infocard .info .logo {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+.view-7 .bottom .infocard p {
+  font-style: monospace;
+  font-size: 1.2em;
+  font-weight: 500;
+  word-spacing: -0.05em;
+  line-height: 1.5em;
+  opacity: 0.5;
 }/*# sourceMappingURL=style.css.map */
