@@ -671,8 +671,9 @@ main{
                 p{
                     text-transform: uppercase;
                     font-size: Roboto-mono,monospace;
-                    font-weight: 400;
+                    font-weight: 600;
                     font-size: 1em;
+                    opacity: 0.7;
                 }
                 .logo{
                     display: flex;
@@ -691,5 +692,33 @@ main{
         }
         
         
+    }
+}
+
+@media (min-width:1020px){
+    .view-7{
+        padding: 4rem;
+        width: 100%;
+        gap:4em;
+        .top{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap:20em;
+            h2{
+                font-size: 8em;
+            }
+            p{
+                font-size: 1.8em;
+            }
+        }
+        .bottom{
+            flex-direction: row;
+            .infocard{
+               p{
+                font-size: 1.2em;
+               }
+            }
+        }
     }
 }

@@ -606,8 +606,9 @@ main {
 .view-7 .bottom .infocard .info p {
   text-transform: uppercase;
   font-size: Roboto-mono, monospace;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1em;
+  opacity: 0.7;
 }
 .view-7 .bottom .infocard .info .logo {
   display: flex;
@@ -621,4 +622,30 @@ main {
   word-spacing: -0.05em;
   line-height: 1.5em;
   opacity: 0.5;
+}
+
+@media (min-width: 1020px) {
+  .view-7 {
+    padding: 4rem;
+    width: 100%;
+    gap: 4em;
+  }
+  .view-7 .top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20em;
+  }
+  .view-7 .top h2 {
+    font-size: 8em;
+  }
+  .view-7 .top p {
+    font-size: 1.8em;
+  }
+  .view-7 .bottom {
+    flex-direction: row;
+  }
+  .view-7 .bottom .infocard p {
+    font-size: 1.2em;
+  }
 }/*# sourceMappingURL=style.css.map */
